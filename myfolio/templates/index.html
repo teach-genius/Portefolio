@@ -1,0 +1,495 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}{%endblock%}</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+    h1,
+    p,
+    li {
+        font-family: "Inter", sans-serif;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            list-style: none;
+        }
+    }
+</style>
+
+<body>
+
+    <main>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            nav {
+                position: fixed;
+                height: 60px;
+                width: 100%;
+                padding-left: 12px;
+                padding-right: 12px;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                background-color: rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(5px);
+                gap: 200px;
+                justify-content: space-around;
+                border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                }
+
+                #link-nav {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    font-size: 30px;
+                }
+            }
+
+            .ite {
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                a:hover {
+                    color: #0D9488;
+                }
+            }
+        </style>
+        <nav>
+            <div>
+                <h1 style="font-size: 1.25rem;font-weight: 580;
+    line-height: 1.75rem;">Chantry Olanda-Eyiba</h1>
+            </div>
+
+            <div>
+                <ul>
+                    <li class="ite"><a href="">Research</a></li>
+                    <li class="ite"><a href="">Projects</a></li>
+                    <li class="ite"><a href="">Skills</a></li>
+                    <li class="ite"><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="link-nav">
+                <a href="{{github}}" style="color: black;text-decoration: none;"><i class="fa-brands fa-github"></i></a>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </nav>
+
+        <style>
+            #pre-sec {
+                margin-top: 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                margin-bottom: 100px;
+                padding: 12px;
+                background: linear-gradient(#99f6e41a, #FFFFFF);
+            }
+
+            #link-pre-sec {
+                margin-top: 30px;
+                gap: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            #info-pre-sec {
+                gap: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .circle {
+                opacity: 0.2;
+            }
+        </style>
+        <section id="pre-sec">
+            <img class="circle" style="position: absolute;top: 215px;left: 428px;z-index: -1;" width="320px"
+                src="{%static 'imgs/bigbach.png'%}" alt="" srcset="">
+            <img class="circle" style="position: absolute;left: 100px;top: 100px;z-index: -1;" width="160px"
+                src="{%static 'imgs/bigbach.png'%}" alt="" srcset="">
+            <img class="circle" style="position: absolute;right: 160px;top: 150px;z-index: -1;" width="240px"
+                src="{%static 'imgs/bigbach.png'%}" alt="" srcset="">
+            <div
+                style="margin-top: 12px; display: flex;flex-direction: column; background-color: #CCFBF1;height: 25px;width: 178px;border-radius: 20px;align-items: center;justify-content: center;justify-items: center;">
+                <p style="text-align: center; color: #115E59;line-height: 11px;font-size: 12px;font-weight: bold;">AI
+                    Engineering Student</p>
+            </div>
+            <div style="margin-top: 20px;">
+                <h1 style="font-weight: bold;font-size: 4.5rem;
+        line-height: 1;">Innovation Through AI</h1>
+            </div>
+            <div style="width: 60%;">
+                <p style="font-size: 1.5rem;
+        line-height: 2rem; color: #4B5563;text-align: center;">Passionate about leveraging artificial intelligence to
+                    solve real-world challenges. Exploring the frontiers of machine learning and its applications.</p>
+            </div>
+            <style>
+                #vpro:hover div {
+                    background-color: rgb(9, 121, 112);
+                }
+
+                #vpro2:hover div {
+                    background: linear-gradient(#99f6e41a, #FFFFFF);
+                }
+
+                #vpro div {
+                    background-color: #0d9488;
+                }
+            </style>
+            <div id="link-pre-sec">
+                <a id="vpro" href="" style="text-decoration: none;">
+                    <div
+                        style="justify-content: center; justify-items: center; align-items: center;display: flex;flex-direction: column; height: 52px;width: 158px;border-radius: 8px;">
+                        <p style="line-height: 24px; text-align: center; color: #FFFFFF;">View Projects</p>
+                    </div>
+                </a>
+
+
+                <a id="vpro2" href="" style="text-decoration: none;">
+                    <div
+                        style="border: 2px solid #0D9488; justify-content: center; justify-items: center; align-items: center;display: flex;flex-direction: column;height: 52px;width: 158px;border-radius: 8px;">
+                        <p style="line-height: 24px; text-align: center; color: #0D9488;">Connect</p>
+                    </div>
+                </a>
+            </div>
+            <div id="info-pre-sec" style="width: 70%;justify-content: space-around;margin-top: 30px;">
+                <div class="item-sec">
+                    <h1>10+</h1>
+                    <p>Projects</p>
+                </div>
+                <div class="item-sec">
+                    <h1>5+</h1>
+                    <p>Technologies</p>
+                </div>
+                <div class="item-sec">
+                    <h1>3+</h1>
+                    <p>Publications</p>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .item-sec {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    color: #4B5563;
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+
+                h1 {
+                    color: black;
+                    font-size: 1.875rem;
+                    line-height: 2.25rem;
+                    font-weight: bold;
+                }
+            }
+
+            #section-1,
+            #section-2 {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project-item:hover {
+                transform: translate(0px, 20px);
+                box-shadow: 0px 10px 15px -3px #0F766E;
+                border-color: #0F766E;
+                transition: 1s;
+            }
+
+
+            .project-item {
+                height: 428px;
+                width: 359px;
+                border-radius: 12px;
+                overflow: hidden;
+                box-sizing: border-box;
+                border-width: 0;
+                border-style: solid;
+                box-sizing: border-box;
+                box-shadow: 0px 10px 15px -3px #e5e7eb;
+                border-color: #e5e7eb;
+                border-style: solid;
+
+
+                h1 {
+                    color: black;
+                    font-size: 17px;
+                    line-height: 28px;
+                }
+
+                p {
+                    color: #4B5563;
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+
+                li {
+                    color: #0F766E;
+                    font-size: 11px;
+                    line-height: 20px;
+                    height: 28px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #CCFBF1;
+                    border-radius: 12px;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    align-items: center;
+                    justify-items: center;
+                    justify-content: center;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+            }
+
+            #view-projets {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+
+            }
+
+            .more-item {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                color: #4B5563;
+
+                i {
+                    font-size: 20px;
+                }
+            }
+
+            .b-block-project {
+                display: flex;
+                flex-direction: column;
+                padding-left: 40px;
+                padding-right: 40px;
+                gap: 10px;
+
+            }
+        </style>
+
+
+
+        <section id="section-2">
+            <div style="display: flex;flex-direction: column;align-items: center;width: 47%;gap: 20px;">
+                <h1 style="font-weight: bold;font-size: 25px;line-height: 36px;color: black;">Research & Projects</h1>
+                <p style="text-align: center; font-size: 13px;line-height: 24px;color: #4B5563;">Exploring the
+                    intersection of artificial intelligence and real-world applications through research and practical
+                    implementations.</p>
+            </div>
+
+            <div id="view-projets" style="margin-top: 50px;margin-bottom: 50px;width: 90%;">
+
+                {%for projets in projets%}
+                <div class="project-item">
+                    <img height="50%" width="100%" src="{{projets.img}}" alt="">
+                    <div class="b-block-project">
+                        <h1>{{projets.title}}</h1>
+                        <p>
+                            {{projets.description}}
+                        </p>
+                        <div style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: start;">
+                            <ul>
+                                {%for tech in projets.tech%}
+                                <li>{{tech}}</li>
+                                {%endfor%}
+                            </ul>
+                        </div>
+                        <div class="more-item">
+                            <a href="{{projets.repo_url}}" style="color: black;text-decoration: none;"><i class="fa-brands fa-github"></i></a>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+
+                {%endfor%}
+            </div>
+
+        </section>
+
+
+        <section id="section-3">
+            <div id="title-3" style="align-items: center;margin-top: 50px;">
+                <h1 style="color: black; font-size: 25px;line-height: 36px;font-weight: bold;">Technical Skills</h1>
+                <p style="text-align: center; color: #4B5563;font-size: 13px;line-height: 24px;margin-top: 20px;">
+                    Comprehensive expertise in AI and machine learning technologies, with a focus on practical
+                    <br>applications and research.
+                </p>
+            </div>
+            <div style="padding-left: 65px;margin-top: 30px;margin-bottom: 30px;gap: 30px;  width: 90%; justify-content:space-evenly; display: flex;flex-direction:row;align-items: center;flex-wrap: wrap;justify-content: start;">
+                {%for skills in skills%}
+                <div class="view-comp">
+                    <h1>{{skills.skill}}</h1>
+                    <div class="info-block">
+                        {%for tech in skills.tech%}
+                        <div class="b-block">
+                            <p>{{tech}}</p>
+                        </div>
+                        {%endfor%}
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+        </section>
+        <style>
+            .b-block:hover {
+                background-color: #CCFBF1;
+
+                p {
+                    color: #0D9488;
+                }
+            }
+
+            .b-block {
+                height: 36px;
+                background-color: #F9FAFB;
+                border-radius: 8px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                justify-content: center;
+                padding: 0px 12px;
+                color: #374151;
+                font-size: 11px;
+                line-height: 20px;
+            }
+
+            .view-comp:hover {
+                transform: scale(1.1);
+                border: 1px solid #0D9488;
+                transition: 1s;
+            }
+
+            .view-comp {
+                width: 45.85%;
+                padding: 16px;
+                border-radius: 12px;
+                background-color: #FFFFFF;
+                box-sizing: border-box;
+                box-shadow: 0 1px 2px 0 #e5e7eb;
+
+                h1 {
+                    color: #0D9488;
+                    font-size: 17px;
+                    line-height: 28px;
+                    font-weight: 500w;
+                }
+            }
+
+            #section-3 {
+                background-color: #F9FAFB;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #title-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h1 {
+                    color: black;
+                }
+
+                p {
+                    color: #4B5563;
+                }
+            }
+
+            .info-block {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        </style>
+
+        <footer style="display: flex;flex-direction: column;align-items: center;">
+            <h1 style="font-weight: bold;font-size: 25px;line-height: 36px;margin-bottom: 20px;margin-top: 20px;">Get In
+                Touch</h1>
+            <p style="text-align: center; width: 46%;color: #4B5563;font-size: 13px;line-height: 24px;">Interested in
+                collaboration or want to discuss AI innovations? I'm always excited to connect with fellow researchers
+                and technology enthusiasts.</p>
+            <div
+                style="display: flex;flex-direction: column;align-items: center;gap: 20px;margin-top: 20px;margin-bottom: 20px;">
+                <div><a href="" class="item-footer"><i class="fa-regular fa-envelope"></i>contact@chantryolanda.com</a>
+                </div>
+            </div>
+        </footer>
+        <style>
+            .item-footer {
+                font-size: 15px;
+                line-height: 28px;
+                color: black;
+                align-items: center;
+                font-family: "Inter", sans-serif;
+            }
+
+            footer {
+                background-color: #FFFFFF;
+
+                h1 {
+                    color: black;
+                }
+
+                p {
+                    color: #4B5563;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                }
+            }
+        </style>
+    </main>
+
+</body>
+
+</html>
