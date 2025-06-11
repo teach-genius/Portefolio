@@ -1,0 +1,440 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olanda-Eyiba Chantry - Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <h1>Olanda-Eyiba Chantry</h1>
+            <h2>Ingénieur en Intelligence Artificielle</h2>
+            <p>Passionné par l'intelligence artificielle, je conçois des modèles en Machine Learning et Deep Learning. Curieux et animé par les défis, j'aime m'impliquer dans des projets ambitieux.</p>
+            <div class="hero-buttons">
+                <a href="#projets-personnels" class="btn primary-btn">Voir mes projets</a>
+                <a href="#contact" class="btn secondary-btn">Me contacter</a>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>6+</h3>
+                    <p>Projets IA</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2+</h3>
+                    <p>Hackathons</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4</h3>
+                    <p>Langues</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <p>Certifications</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="competences-profil" class="section">
+            <div class="container">
+                <h2>Compétences & Profil</h2>
+                <p class="section-description">Un aperçu de mon expertise technique et de mes qualités personnelles</p>
+                <div class="skills-grid">
+                    <div class="technical-skills card">
+                        <h3><i class="fas fa-code"></i> Compétences Techniques</h3>
+                        <ul>
+                            <li>
+                                <span>Machine Learning</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Deep Learning</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>NLP</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Reconnaissance vocale</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Programmation Python</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Développement API</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Développement web & mobile</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Docker & CI/CD</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="soft-skills card">
+                        <h3><i class="fas fa-heart"></i> Soft Skills</h3>
+                        <div class="soft-skills-tags">
+                            <span>Travail en équipe</span>
+                            <span>Apprentissage en continue</span>
+                            <span>Adaptabilité</span>
+                            <span>Communication & Présentation</span>
+                        </div>
+                        <h3><i class="fas fa-globe"></i> Langues</h3>
+                        <ul class="languages-list">
+                            <li>Français <span class="level">Avancé</span></li>
+                            <li>Espagnol <span class="level">Intermédiaire</span></li>
+                            <li>Anglais <span class="level">Intermédiaire</span></li>
+                            <li>Arabe Darija <span class="level">Débutant</span></li>
+                        </ul>
+                        <h3><i class="fas fa-puzzle-piece"></i> Centres d'Intérêt</h3>
+                        <div class="interests-tags">
+                            <span>Football</span>
+                            <span>Cyclisme</span>
+                            <span>Bricolage</span>
+                            <span>Musique</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets-personnels" class="section">
+            <div class="container">
+                <h2>Projets Personnels</h2>
+                <p class="section-description">Une sélection de mes réalisations en intelligence artificielle</p>
+                <div class="projects-grid">
+                    <div class="project-card card">
+                        <div class="project-icon" style="background-color: #f0f8ff;">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h4>Système de reconnaissance faciale</h4>
+                        <p>Développement d'un système de reconnaissance faciale utilisant des techniques de deep learning pour l'identification en temps réel.</p>
+                        <div class="project-tags">
+                            <span>Computer Vision</span>
+                            <span>Deep Learning</span>
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <div class="project-icon" style="background-color: #e0ffe0;">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h4>Système de surveillance routière</h4>
+                        <p>Solution intelligente de surveillance du trafic routier avec détection automatique de plaque d'immatriculation et analyse du vehicule.</p>
+                        <div class="project-tags">
+                            <span>Computer Vision</span>
+                            <span>IA</span>
+                            <span>Surveillance</span>
+                            <span>Détection</span>
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <div class="project-icon" style="background-color: #ffe0ff;">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>Reconnaissance d'ASL statique</h4>
+                        <p>Système de reconnaissance de la langue des signes américaine (ASL) visant à faciliter l’initiation à son apprentissage pour les personnes entendantes, afin de briser les barrières de communication entre les personnes malentendantes et entendantes.</p>
+                        <div class="project-tags">
+                            <span>Computer Vision</span>
+                            <span>ASL</span>
+                            <span>Accessibilité</span>
+                            <span>ML</span>
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <div class="project-icon" style="background-color: #ffffe0;">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h4>Système de reconnaissance vocale</h4>
+                        <p>Système de reconnaissance et d’interprétation vocale multilingue (arabe, russe, français, anglais, espagnol), facilitant les conversations en temps réel et réduisant les barrières linguistiques.</p>
+                        <div class="project-tags">
+                            <span>NLP</span>
+                            <span>Speech Recognition</span>
+                            <span>Audio Processing</span>
+                            <span>AI</span>
+                            <span>Gmm</span>
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <div class="project-icon" style="background-color: #e0e0ff;">
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+                        <h4>Analyse de sentiment</h4>
+                        <p>Outil d'analyse de sentiment utilisant des modèles NLP avancés pour évaluer les opinions dans les textes.</p>
+                        <div class="project-tags">
+                            <span>NLP</span>
+                            <span>Sentiment Analysis</span>
+                            <span>BERT</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <div class="project-icon" style="background-color: #e0ffff;">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4>Classification de documents</h4>
+                        <p>Système automatisé de classification de documents utilisant des techniques d'apprentissage automatique et de NLP.</p>
+                        <div class="project-tags">
+                            <span>NLP</span>
+                            <span>Classification</span>
+                            <span>Document AI</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="quote">"J'adore relever des défis techniques et transformer des idées ambitieuses en projets concrets."</p>
+            </div>
+        </section>
+
+        <section id="experiences-professionnelles" class="section">
+            <div class="container">
+                <h2>Expériences Professionnelles</h2>
+                <p class="section-description">Mon parcours dans le développement et l'innovation</p>
+                <div class="experience-item card">
+                    <div class="experience-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="experience-details">
+                        <h4>Hackathon E-Tofoula-Hackathon - ONDE</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> UIR, Rabat, Maroc <i class="fas fa-calendar-alt"></i> 14-16 février 2024</p>
+                        <p>Participation intensive à un hackathon focalisé sur les solutions sociales innovantes.</p>
+                        <h5>Compétences développées :</h5>
+                        <ul>
+                            <li>Collaboration et gestion de projet en mode sprint</li>
+                            <li>Analyse des problématiques sociales</li>
+                        </ul>
+                    </div>
+                    <span class="duration">3 jours</span>
+                </div>
+                <div class="experience-item card">
+                    <div class="experience-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="experience-details">
+                        <h4>Hackathon MoroccoAI/2024-InnovAI-Hackathon</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> MoroccoAI <i class="fas fa-calendar-alt"></i> 25 novembre - 01 décembre 2024</p>
+                        <p>Semaine de codage intensif pour développer des solutions d'intelligence artificielle innovantes.</p>
+                        <h5>Compétences développées :</h5>
+                        <ul>
+                            <li>Création d'agents conversationnels intelligents</li>
+                            <li>Expérience en gestion du stress et travail en hackathon</li>
+                        </ul>
+                    </div>
+                    <span class="duration">Une semaine</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="formation-academique" class="section">
+            <div class="container">
+                <h2>Formation Académique</h2>
+                <p class="section-description">Mon parcours éducatif vers l'excellence en IA</p>
+                <div class="education-item card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h4>Cycle Ingénieur en Intelligence Artificielle</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> EIDIA (UEMF) <i class="fas fa-calendar-alt"></i> Septembre 2023 – Présent</p>
+                        <p>Approfondissement des sciences fondamentales, Machine Learning, Deep Learning, NLP & Reconnaissance de la parole.</p>
+                    </div>
+                    <span class="status in-progress">En cours</span>
+                </div>
+                <div class="education-item card">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-details">
+                        <h4>Classes Préparatoires aux Grandes Écoles (CPI)</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> EIDIA (UEMF) <i class="fas fa-calendar-alt"></i> Septembre 2021 – Juin 2023</p>
+                        <p>Formation en sciences fondamentales préparant aux écoles d'ingénieurs avec focus sur les mathématiques et la physique.</p>
+                    </div>
+                    <span class="status completed">Terminé</span>
+                </div>
+                <div class="education-item card">
+                    <div class="education-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="education-details">
+                        <h4>Baccalauréat C (Mathématiques & Physique)</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Lycée George Mabignath <i class="fas fa-calendar-alt"></i> Septembre 2020 – Juin 2021</p>
+                        <p>Baccalauréat scientifique avec spécialisation en mathématiques et physique, fondation solide pour les études d'ingénieur.</p>
+                    </div>
+                    <span class="status obtained">Obtenu</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications-activites" class="section">
+            <div class="container">
+                <h2>Certifications & Activités</h2>
+                <p class="section-description">Mon engagement dans l'apprentissage continu et les activités académiques</p>
+                <div class="certifications-grid">
+                    <div class="certifications-courses card">
+                        <h3>Certifications & Cours</h3>
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h4>Unsupervised Learning, Recommender Systems, Reinforcement Learning</h4>
+                                <span class="certification-type">Certification</span>
+                                <p>DeepLearning.AI Stanford & Coursera</p>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h4>Computer Vision Onramp</h4>
+                                <span class="certification-type">Certification</span>
+                                <p>MathWorks</p>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h4>Supervised Machine Learning</h4>
+                                <span class="certification-type">Certification</span>
+                                <p>DeepLearning.AI Stanford & Coursera</p>
+                            </div>
+                        </div>
+                         <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h4>Almnovation Hackathon</h4>
+                                <span class="certification-type">Certification</span>
+                                <p>Tamwilcom & UEMF</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra-activities card">
+                        <h3>Activités Extra-Scolaires</h3>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-feather-alt"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Chaire de la Littérature Africaine</h4>
+                                <p>Académie du Royaume du Maroc</p>
+                                <p><i class="fas fa-calendar-alt"></i> Mai 2022 <i class="fas fa-map-marker-alt"></i> Rabat</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Chaire Alliance des Civilisations</h4>
+                                <p>UNAOC & UEMF</p>
+                                <p><i class="fas fa-calendar-alt"></i> Déc. 2024 <i class="fas fa-map-marker-alt"></i> FES</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Débat du prix NOBEL</h4>
+                                <p>UEMF</p>
+                                <p><i class="fas fa-calendar-alt"></i> Février 2025 <i class="fas fa-map-marker-alt"></i> FES</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-road"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Roadshow Morocco 200 GITEX Africa</h4>
+                                <p>GITEX Africa</p>
+                                <p><i class="fas fa-calendar-alt"></i> Février 2025 <i class="fas fa-map-marker-alt"></i> FES</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contactez-moi</h2>
+                <p class="section-description">Prêt à contribuer à des missions technologiques exigeantes</p>
+                <div class="contact-grid">
+                    <div class="contact-info card">
+                        <h3>Restons en contact</h3>
+                        <p>N'hésitez pas à me contacter pour discuter d'opportunités ou de collaborations</p>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <span>chantryolanda85@gmail.com</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Maroc</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="#" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="download-cv card">
+                        <h3>Télécharger mon CV</h3>
+                        <p>Accédez à une version complète de mon parcours et de mes compétences</p>
+                        <div class="cv-info">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>CV Olanda-Eyiba Chantry</span>
+                            <small>Ingénieur IA • Format PDF • Dernière mise à jour 2024</small>
+                        </div>
+                        <a href="{% static 'CV-Olanda-Eyiba-Chantry.pdf' %}" download class="btn primary-btn download-btn">Télécharger le CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Olanda-Eyiba Chantry. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <button id="theme-toggle" class="theme-toggle-btn">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

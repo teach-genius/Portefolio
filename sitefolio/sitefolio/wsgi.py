@@ -1,16 +1,16 @@
 """
-WSGI config for myfolio project.
+WSGI config for sitefolio project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
-https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
+https://docs.djangoproject.com/en/5.0/howto/deployment/wsgi/
 """
 
 import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myfolio.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sitefolio.settings')
 
 application = get_wsgi_application()
